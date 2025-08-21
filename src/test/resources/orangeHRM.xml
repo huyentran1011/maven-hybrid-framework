@@ -5,6 +5,19 @@
         <listener class-name="commons.MethodListener"/>
         <listener class-name="reportConfigs.AllureListener"/>
     </listeners>
+    <test name="Run on Chrome browser"  preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="orangehrm.adminAccount.PIM.PIM_01_Employee"/>
+        </classes>
+    </test>
+
+    <test name="Run on Firefox browser"  preserve-order="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="orangehrm.adminAccount.PIM.PIM_01_Employee"/>
+        </classes>
+    </test>
     <test name="Run on Edge browser"  preserve-order="true">
         <parameter name="browser" value="edge"/>
         <classes>
